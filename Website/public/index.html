@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <img src="../Images/placeholder.jpg" style="width: 50px; height: 50px;">
+        <!--placeholder for official website logo-->
+
+        <button class="home">Home Page</button>
+        <div class="dropdown">
+            <button class="dropbutton">Builds</button>
+            <div class="dropdown-content">
+                <a href="">Light</a>
+                <a href="">Medium</a>
+                <a href="">Heavy</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbutton">THE FINALS</button>
+            <div class="dropdown-content">
+                <a href="">Official Site</a>
+                <a href="">Steam</a>
+                <a href="">Discord</a>
+            </div>
+        </div>
+
+        <div class="split-right">
+            <button class="upload">Upload Build</button>
+            <button class="login" onclick="document.getElementById('modal').style.display = 'block'">Log In</button>
+        </div>
+    </div>
+
+    <!--this is the login/registration form that would pop up-->
+    <div id="modal">
+        <form class="modal-content" method="post">
+            <div class="container">
+                <h2>Log In</h2>
+                <label for="username">Username</label>
+                <br>
+                <input type="text" id="username" name="username" placeholder="abc123/abc@123.com" required>
+                <br>
+                <label for="password">Password</label>
+                <br>
+                <input type="password" id="password" name="password" placeholder="Example_Password..." required>
+                <br>
+                <button type="submit" class="button-global">Log In</button>
+                <a href="" style="padding-left: 10px;">Forgot Password?</a>
+            </div>
+            <div class="container">
+                <p>Don't have an account? <a href="">Register here!</a></p>
+                <button class="button-global" onclick="document.getElementById('modal').style.display = 'none'">Close</button>
+            </div>
+        </form>
+    </div>
+
+    <!--this is the "form" the user inputs to upload a post-->
+    <div id="upload-form">
+        <form class="modal-content" method="post">
+            <div class="container">
+                <h2>Upload Build</h2>
+                <label for="build-name">Build Name</label>
+                <br>
+                <input type="text" id="build-name" name="build-name" placeholder="Example_Build" required>
+                <br>
+                <label for="build-type">Build Type</label>
+                <br>
+                <input type="text" id="build-type" name="build-type" placeholder="Light/Medium/Heavy" required>
+                <br>
+                <label for="build-description">Build Description</label>
+                <br>
+                <textarea id="build-description" name="build-description" placeholder="Description of the build..." required></textarea>
+                <br>
+                <button type="submit" class="button-global">Upload</button>
+            </div>
+            <div class="container">
+                <button class="button-global" onclick="document.getElementById('modal').style.display = 'none'">Close</button>
+            </div>
+        </form>
+    </div>
+    
+    <!--main content of the website starts here-->
+    <main class="content">
+        <section class="homepage">
+            <h1>This is the home page</h1>
+            <p>line</p>
+        </section>
+
+        <!--the way this is displayed is through listing-->
+        <section class="builds">
+            <h1>This is the builds section</h1>
+            <p>line</p>
+        </section>
+
+        <section class="the-finals">
+            <h1>Official Links for THE FINALS</h1>
+            <p>line</p>
+        </section>
+    </main>
+
+
+
+    <footer class="footer-global">
+        <div class="footer-content">
+            <p>example footer text</p>
+            <p>THE FINALS Wiki is supported by the games' community.</p>
+        </div>
+    </footer>
+    <script>
+
+
+    </script>
+</body>
+
+</html>

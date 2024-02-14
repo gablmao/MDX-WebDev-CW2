@@ -1,0 +1,215 @@
+/* This is for the top navigation bar */
+@font-face { font-family: Saira ExtraBold; src: url('Saira-VariableFont_wdth,wght.ttf'); }
+body {
+    background-color: #a83500;
+    font-family: Saira ExtraBold;
+}
+
+.nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav img {
+    float: left;
+}
+
+.split-right {
+    position: fixed;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    float: left;
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.home:hover {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+.dropbutton {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbutton {
+    background-color: #a83500;
+}
+
+
+.upload{
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.upload:hover {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.login {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.login:hover {
+    background-color: #ffffff;
+    color: #333;
+}
+
+
+
+
+/*this is for the login/register/build form*/
+/*for UNIVERSAL BUTTONS AROUND SITE PLS*/
+.button-global{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.button-global:hover {
+    background-color: #a83500;
+    color: white;
+}
+
+
+#modal {
+    display: none;
+    /*by default it will not be shown.*/
+    position: fixed;
+    z-index: 1; /*sits on top*/
+    width: 100%; /*full width*/
+    height: 100%; /*full height*/
+    right: 0;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding: auto;
+}
+
+.modal-content {
+    background-color: #333;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 16px;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+
+
+
+
+/* This is for the main content */
+.content {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.homepage {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.builds {
+    background-color: #ff8b8b;
+    padding: 20px;
+}
+
+.the-finals {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+/* This is for the footer */
+.footer-global {
+    background-color: #333;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+    margin: auto;
+}
+
+.footer-global .footer-content {
+    background: #000;
+    font-size: 12px;
+    padding: 20px 20px;
+    text-align: center;
+}
